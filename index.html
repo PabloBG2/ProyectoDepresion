@@ -15,25 +15,22 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+
+    .reveal h2 {
+      font-size: 1em;
+    }
+
+    /* Fix iframe clipping issue */
     iframe {
       border: none;
       width: 100%;
-      height: 800px;
+      height: 800px; /* adjust as needed */
       max-height: none;
     }
-    .reveal .slides section h2 {
-      font-size: 1em;
-    }
+
+    /* Allow slide content to overflow vertically */
     .reveal section {
       overflow: visible !important;
-    }
-
-    .reveal .slides {
-      height: auto !important;
-    }
-
-    .reveal {
-      height: auto !important;
     }
   </style>
 </head>
