@@ -20,18 +20,33 @@
       font-size: 1em;
     }
 
-    /* Fix iframe clipping issue */
-    iframe {
-      border: none;
-      width: 150%;
-      height: 600px; /* adjust as needed */
-      max-width: none;
+    .reveal {
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .reveal .slides {
+      overflow-x: visible !important;
+      white-space: nowrap;
     }
 
     .reveal section {
+      display: inline-block;
+      vertical-align: top;
       overflow-x: visible !important;
-      overflow-y: hidden !important; /* Optional: disables vertical scroll if you want */
+      white-space: normal;
+      width: auto !important;
+      max-width: none !important;
     }
+
+    iframe {
+      border: none;
+      width: 150%;
+      height: 600px;
+      max-width: none;
+      display: block;
+    }
+
   </style>
 </head>
 <body>
